@@ -93,7 +93,7 @@ const serviceData = {
     badge: 'Storytelling That Sells',
     heroH1: 'Engage & Convert with Strategic Content',
     heroP: 'We create compelling content that captures attention, educates your audience, and drives profitable customer action.',
-    heroImg: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80',
+    heroImg: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=500&q=80',
     pillarsTitle: 'Content That Connects',
     pillars: [
       { title: 'Copywriting & Storytelling', icon: 'fa-pen-fancy', desc: 'High-quality articles and website copy that rank on search engines and resonate with your readers.' },
@@ -149,7 +149,7 @@ const serviceData = {
     badge: 'Digital Experiences',
     heroH1: 'Create a Digital Presence That Inspires',
     heroP: 'We design stunning, user-centric websites that tell your brand\'s story and convert visitors into loyal customers.',
-    heroImg: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
+    heroImg: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=80',
     pillarsTitle: 'Design with Purpose',
     pillars: [
       { title: 'UX/UI Design', icon: 'fa-pen-ruler', desc: 'Intuitive and aesthetically pleasing interfaces that provide a seamless user journey.' },
