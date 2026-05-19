@@ -63,13 +63,32 @@ const About = () => {
   const [activeStage, setActiveStage] = useState(0);
   const [activeValue, setActiveValue] = useState(null);
   const [hoveredTeam, setHoveredTeam] = useState(null);
+  const [isPaused, setIsPaused] = useState(false);
+  const [progress, setProgress] = useState(0);
+
+  const DURATION = 3000; // ms per stage
+  const TICK = 30;       // progress update interval ms
 
   useEffect(() => {
-    const timer = setInterval(() => {
+    if (isPaused) return;
+
+    const progressTimer = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 100) return 0;
+        return prev + (TICK / DURATION) * 100;
+      });
+    }, TICK);
+
+    return () => clearInterval(progressTimer);
+  }, [isPaused]);
+
+  useEffect(() => {
+    if (isPaused) return;
+    if (progress >= 100) {
       setActiveStage((prev) => (prev + 1) % journey.length);
-    }, 3000);
-    return () => clearInterval(timer);
-  }, []);
+      setProgress(0);
+    }
+  }, [progress, isPaused]);
 
   return (
     <main style={{ overflowX: 'hidden' }}>
@@ -187,10 +206,39 @@ const About = () => {
             <h2 className="section-title reveal fade-up">A Decade of Digital Excellence</h2>
             <p className="section-subtitle reveal fade-up" style={{ transitionDelay: '0.1s' }}>Five pivotal milestones that shaped who we are — and where we are going next.</p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 0, position: 'relative' }}>
-            <div style={{ position: 'absolute', top: 32, left: '10%', right: '10%', height: 2, background: 'linear-gradient(90deg, #6366F1, #0288D1, #26C6DA, #A855F7, #10B981)', borderRadius: 2, zIndex: 0 }} />
+          <div
+            style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 0, position: 'relative' }}
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
+            {/* Base grey track */}
+            <div style={{ position: 'absolute', top: 32, left: '10%', right: '10%', height: 2, background: 'rgba(150,150,180,0.18)', borderRadius: 2, zIndex: 0 }} />
+            {/* Animated progress overlay */}
+            <div style={{ position: 'absolute', top: 32, left: '10%', right: '10%', height: 2, borderRadius: 2, zIndex: 1, overflow: 'hidden', pointerEvents: 'none' }}>
+              {journey.map((item, idx) => {
+                const segW = 100 / journey.length;
+                const isCompleted = idx < activeStage;
+                const isActive = idx === activeStage;
+                const fillWidth = isCompleted ? segW : isActive ? segW * (progress / 100) : 0;
+                const fromColor = idx > 0 ? journey[idx - 1].color : item.color;
+                return (
+                  <div key={idx} style={{
+                    position: 'absolute',
+                    left: `${idx * segW}%`,
+                    top: 0,
+                    width: `${fillWidth}%`,
+                    height: '100%',
+                    background: `linear-gradient(90deg, ${fromColor}, ${item.color})`,
+                    borderRadius: 2,
+                    boxShadow: isActive ? `0 0 8px ${item.color}99` : 'none',
+                    transition: isCompleted ? 'none' : isPaused ? 'none' : `width ${TICK}ms linear`,
+                  }} />
+                );
+              })}
+            </div>
             {journey.map((item, idx) => (
-              <div key={idx} className="reveal fade-up" style={{ transitionDelay: `${idx * 0.1}s`, position: 'relative', zIndex: 1 }}>
+              <div key={idx} className="reveal fade-up" style={{ transitionDelay: `${idx * 0.1}s`, position: 'relative', zIndex: 2, cursor: 'pointer' }}
+                onClick={() => { setActiveStage(idx); setProgress(0); }}>
                 <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 24 }}>
                   <div style={{ width: 64, height: 64, borderRadius: '50%', background: activeStage === idx ? item.color : '#fff', border: `3px solid ${item.color}`, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: activeStage === idx ? `0 0 0 8px ${item.color}20` : `0 4px 16px ${item.color}25`, transition: 'all 0.35s' }}>
                     <i className={`fa-solid ${item.icon}`} style={{ fontSize: '1.1rem', color: activeStage === idx ? '#fff' : item.color, transition: 'all 0.35s' }}></i>
