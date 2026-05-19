@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | LearnSpace Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .home-hero {
+            height: 82vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #4B2E5A;
+            background-image: var(--bg-soft-1);
+            padding: 15px 10px;
+        }
+
+        .home-card {
+            max-width: 800px;
+            padding: 40px 20px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--glass-border);
+        }
+
+        .home-card h1 {
+            font-size: 3.5rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+        }
+
+        .home-card p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="pill-nav-container">
+        <a href="home.html" class="brand-pill">
+            <i class="fa-solid fa-chart-line"></i>
+            Learnspace <span>Digital</span>
+        </a>
+        <nav class="pill-nav">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropbtn active">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="seo-optimization.html">SEO Optimization</a>
+                        <a href="social-media-marketing.html">Social Media</a>
+                        <a href="ppc-advertising.html">PPC Advertising</a>
+                        <a href="content-marketing.html">Content Marketing</a>
+                        <a href="email-marketing.html">Email Marketing</a>
+                        <a href="web-design.html">Web Design</a>
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <a href="contact.html#contact" class="cta-pill">Get Started</a>
+    </div>
+
+    <!-- 4. Services Section -->
+    <section id="services" class="services reveal fade-in-up bg-soft-2">
+
+        <div class="services-slider-container">
+            <h2 class="section-title"><span class="letter-pull-up">Our Services</span></h2>
+            <p class="section-subtitle">Comprehensive solutions for every stage of your growth.</p>
+
+            <div class="slider-nav prev"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="slider-nav next"><i class="fa-solid fa-chevron-right"></i></div>
+
+            <div class="slider-wrapper">
+                <div class="services-grid" id="servicesGrid">
+                    <!-- Service 1: SEO -->
+                    <div class="service-card" id="seo">
+                        <div class="service-icon"><i class="fa-brands fa-google"></i></div>
+                        <h3>SEO Optimization</h3>
+                        <p>Dominating search engine results to drive organic, high-intent traffic to your site.</p>
+                        <ul class="service-features">
+                            <li>Comprehensive Keyword Research</li>
+                            <li>Technical SEO & Core Web Vitals</li>
+                            <li>Backlink Building Strategies</li>
+                            <li>Local SEO & Google Maps</li>
+                        </ul>
+                        <a href="seo-optimization.html" class="btn btn-outline" style="margin-top: auto;">Read More</a>
+                    </div>
+
+                    <!-- Service 2: Social Media -->
+                    <div class="service-card" id="social">
+                        <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                        <h3>Social Media Marketing</h3>
+                        <p>Building vibrant communities and driving engagement across all platforms.</p>
+                        <ul class="service-features">
+                            <li>Content Strategy & Calendars</li>
+                            <li>Community Management</li>
+                            <li>Influencer Partnerships</li>
+                            <li>Paid Social Campaigns</li>
+                        </ul>
+                        <a href="social-media-marketing.html" class="btn btn-outline" style="margin-top: auto;">Read
+                            More</a>
+                    </div>
+
+                    <!-- Service 3: PPC -->
+                    <div class="service-card" id="ppc">
+                        <div class="service-icon"><i class="fa-solid fa-mouse-pointer"></i></div>
+                        <h3>PPC Advertising</h3>
+                        <p>Instant visibility and measurable ROI through targeted ad campaigns.</p>
+                        <ul class="service-features">
+                            <li>Google Ads & Search Marketing</li>
+                            <li>Retargeting & Remarketing</li>
+                            <li>Conversion Rate Optimization</li>
+                            <li>Detailed Performance Audits</li>
+                        </ul>
+                        <a href="ppc-advertising.html" class="btn btn-outline" style="margin-top: auto;">Read More</a>
+                    </div>
+
+                    <!-- Service 4: Content Marketing -->
+                    <div class="service-card" id="content">
+                        <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h3>Content Marketing</h3>
+                        <p>Strategic storytelling that educates, inspires, and converts your audience.</p>
+                        <ul class="service-features">
+                            <li>Blog Posts & Article Writing</li>
+                            <li>Whitepapers & E-books</li>
+                            <li>Video Scripting & Production</li>
+                            <li>Content Distribution Plans</li>
+                        </ul>
+                        <a href="content-marketing.html" class="btn btn-outline" style="margin-top: auto;">Read More</a>
+                    </div>
+
+                    <!-- Service 5: Email Marketing -->
+                    <div class="service-card" id="email">
+                        <div class="service-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <h3>Email Marketing</h3>
+                        <p>Nurturing leads and driving retention through personalized automation.</p>
+                        <ul class="service-features">
+                            <li>Automated Drip Campaigns</li>
+                            <li>List Segmentation & Tagging</li>
+                            <li>Custom Newsletter Design</li>
+                            <li>A/B Testing & Analysis</li>
+                        </ul>
+                        <a href="email-marketing.html" class="btn btn-outline" style="margin-top: auto;">Read More</a>
+                    </div>
+
+                    <!-- Service 6: Web Dev -->
+                    <div class="service-card" id="web">
+                        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Web Design & Dev</h3>
+                        <p>High-converting, mobile-first websites designed for modern user experiences.</p>
+                        <ul class="service-features">
+                            <li>Custom UI/UX Design</li>
+                            <li>Responsive Web Applications</li>
+                            <li>E-commerce Solutions</li>
+                            <li>Speed & Performance Tuning</li>
+                        </ul>
+                        <a href="web-design.html" class="btn btn-outline" style="margin-top: auto;">Read More</a>
+                    </div>
+
+                    <!-- New Service 7: Video Marketing -->
+                    <div class="service-card" id="video">
+                        <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+                        <h3>Video Marketing</h3>
+                        <p>Capture attention with stunning visual content that tells your brand's story.</p>
+                        <ul class="service-features">
+                            <li>Animated Explainer Videos</li>
+                            <li>Professional Brand Stories</li>
+                            <li>Vertical Video (Reels/TikTok)</li>
+                            <li>Video SEO & Hosting</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="margin-top: auto;">Learn More</a>
+                    </div>
+
+                    <!-- New Service 8: Branding -->
+                    <div class="service-card" id="branding">
+                        <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+                        <h3>Branding & Identity</h3>
+                        <p>Defining your unique voice and visual identity in a crowded marketplace.</p>
+                        <ul class="service-features">
+                            <li>Logo Design & Style Guides</li>
+                            <li>Brand Positioning Strategy</li>
+                            <li>Market Analysis & Voice</li>
+                            <li>Visual Brand Audits</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="margin-top: auto;">Learn More</a>
+                    </div>
+
+                    <!-- New Service 9: CRM Automation -->
+                    <div class="service-card" id="crm">
+                        <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3>CRM & Automation</h3>
+                        <p>Streamline your sales and marketing workflows with intelligent automation.</p>
+                        <ul class="service-features">
+                            <li>CRM Implementation (HubSpot)</li>
+                            <li>Sales Funnel Automation</li>
+                            <li>Lead Scoring Systems</li>
+                            <li>Reporting & Dashboards</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="margin-top: auto;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Case Studies / Portfolio -->
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Case Studies</span>
+    </div>
+    <section class="case-studies bg-soft-1">
+        <div class="container">
+            <h2 class="section-title">Success Stories</h2>
+            <!-- <p class="section-subtitle">Real results for real businesses.</p> -->
+
+            <div class="story-carousel-container">
+                <div class="carousel-nav prev"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="carousel-nav next"><i class="fa-solid fa-chevron-right"></i></div>
+
+                <div class="carousel-viewport">
+                    <div class="portfolio-grid" id="storyGrid">
+                        <div class="project-card">
+                            <div class="story-icon-wrapper">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 20V10M18 20V4M6 20V16" />
+                                </svg>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Project 1" class="project-bg">
+                            <div class="project-overlay">
+                                <h3>TechFlow</h3>
+                                <p>SaaS PPC Campaign</p>
+                                <div class="project-stats">
+                                    <span class="proj-stat">+<span class="stat-animate" data-target="150">0</span>%
+                                        Leads</span>
+                                    <span class="proj-stat">-<span class="stat-animate" data-target="30">0</span>%
+                                        CPA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="story-icon-wrapper">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Project 2" class="project-bg">
+                            <div class="project-overlay">
+                                <h3>UrbanMarket</h3>
+                                <p>Local Search Strategy</p>
+                                <div class="project-stats">
+                                    <span class="proj-stat">Top <span class="stat-animate" data-target="3">0</span>
+                                        Ranking</span>
+                                    <span class="proj-stat">+<span class="stat-animate" data-target="200">0</span>%
+                                        Visits</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="story-icon-wrapper">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                                </svg>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Project 3" class="project-bg">
+                            <div class="project-overlay">
+                                <h3>GreenSpace ads</h3>
+                                <p>Marketing Advertiser</p>
+                                <div class="project-stats">
+                                    <span class="proj-stat"><span class="stat-animate" data-target="4">0</span>.5x
+                                        ROAS</span>
+                                    <span class="proj-stat">$<span class="stat-animate" data-target="50">0</span>k
+                                        Sales</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="story-icon-wrapper">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                    <polyline points="9 22 9 12 15 12 15 22" />
+                                </svg>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="SkyLine Project" class="project-bg">
+                            <div class="project-overlay">
+                                <h3>SkyLine Real Estate</h3>
+                                <p>Digital Branding & Virtual Tours</p>
+                                <div class="project-stats">
+                                    <span class="proj-stat">+40% Conversion</span>
+                                    <span class="proj-stat">12k New Leads</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="story-icon-wrapper">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
+                                alt="EcoDrive Project" class="project-bg">
+                            <div class="project-overlay">
+                                <h3>EcoDrive</h3>
+                                <p>Sustainability Narrative Content</p>
+                                <div class="project-stats">
+                                    <span class="proj-stat">1M+ Reach</span>
+                                    <span class="proj-stat">5x Engagement</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="story-icon-wrapper">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                </svg>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="HealthHub Project" class="project-bg">
+                            <div class="project-overlay">
+                                <h3>HealthHub App</h3>
+                                <p>App Store Optimization (ASO)</p>
+                                <div class="project-stats">
+                                    <span class="proj-stat">+500% Installs</span>
+                                    <span class="proj-stat">Top 10 Health Category</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Leadership Team -->
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Leadership</span>
+    </div>
+    <section class="team-section bg-soft-1" style="padding: 100px 0; position: relative; z-index: 1;">
+        <div class="container">
+            <h2 class="section-title">The Minds Behind LearnSpace</h2>
+            <p class="section-subtitle">Meet our leadership team of industry experts.</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="https://www.shutterstock.com/image-illustration/ceo-icon-manager-illustartion-600nw-1857126589.jpg"
+                            alt="Sarah Johnson">
+                    </div>
+                    <div class="team-info">
+                        <h4>Raghu Vamshi</h4>
+                        <span class="team-role">Founder & CEO</span>
+                        <!-- <p>15+ years of experience in digital transformation for Fortune 500 companies.</p> -->
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvXea5d-MNkRufdRao2cItjnxVtTn9xkP1j1yocFmPgQ&s"
+                            alt="Marcus Chen">
+                    </div>
+                    <div class="team-info">
+                        <h4>Varalaxmi</h4>
+                        <span class="team-role">Head of Strategy & COO</span>
+                        <!-- <p>Specialist in data analytics and consumer behavior modeling.</p> -->
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRlxzr_XTrP3GHTNMhvQcfIbSfBLrq0A5XBw&s"
+                            alt="Elena Rodriguez">
+                    </div>
+                    <div class="team-info">
+                        <h4>shridhar kulkarni</h4>
+                        <span class="team-role">Creative Director</span>
+                        <!-- <p>Award-winning designer focused on building narrative-driven brand identities.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 9. Call to Action (CTA) -->
+    <!-- <section id="cta" class="cta-section">
+        <div class="cta-box">
+            <h2>Ready to Scale Your Business?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; color: rgba(255,255,255,0.9);">Book your free strategy
+                session today and let's map out your path to success.</p>
+            <a href="contact.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 15px 40px;">Get My Free
+                Proposal</a>
+        </div>
+    </section> -->
+
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Thank You</span>
+    </div>
+    <main class="home-hero">
+        <div class="home-card">
+            <h1>Thank You For Choosing <span class="highlight">LearnSpace Digital</span></h1>
+            <p>Your journey to digital excellence starts here. Explore our premium marketing solutions and scale your
+                business with data-driven strategies.</p>
+            <a href="digital_marketing_original.html" class="btn btn-primary">Back to Marketing Site</a>
+        </div>
+    </main>
+
+
+    <!-- 11. Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>LearnSpace Digital</h3>
+                    <p>Premium digital marketing solutions for forward-thinking brands. We build strategies that last.
+                    </p>
+                    <div class="social-icons" style="margin-top: 20px;">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="digital_marketing_original.html#home">Home</a></li>
+                        <li><a href="about.html#about-teaser">About Us</a></li>
+                        <li><a href="services.html#services">Services</a></li>
+                        <li><a href="blog.html#blog">Blog</a></li>
+                        <li><a href="contact.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="seo-optimization.html">SEO Optimization</a></li>
+                        <li><a href="social-media-marketing.html">Social Media</a></li>
+                        <li><a href="ppc-advertising.html">PPC Advertising</a></li>
+                        <li><a href="content-marketing.html">Content Marketing</a></li>
+                        <li><a href="web-design.html">Web Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 learnspaceDigital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        {
+            // Scroll-in Slide Animation Trigger
+            const servicesObserverOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const servicesObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const cards = entry.target.querySelectorAll('.service-card');
+                        cards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.classList.add('visible');
+                            }, index * 100);
+                        });
+                        servicesObserver.unobserve(entry.target);
+                    }
+                });
+            }, servicesObserverOptions);
+
+            if (document.querySelector('.services-grid')) {
+                servicesObserver.observe(document.querySelector('.services-grid'));
+            }
+
+            // Success Stories Infinite Carousel Logic
+            const storyViewport = document.querySelector('.carousel-viewport');
+            const storyGrid = document.getElementById('storyGrid');
+            const storyPrevBtn = document.querySelector('.carousel-nav.prev');
+            const storyNextBtn = document.querySelector('.carousel-nav.next');
+
+            if (storyGrid && storyViewport) {
+                const originalCards = Array.from(storyGrid.querySelectorAll('.project-card'));
+                const cardCount = originalCards.length;
+
+                // Clone all cards for seamless loop
+                originalCards.forEach(card => {
+                    const clone = card.cloneNode(true);
+                    clone.classList.add('clone', 'visible');
+                    storyGrid.appendChild(clone);
+                });
+
+                originalCards.reverse().forEach(card => {
+                    const clone = card.cloneNode(true);
+                    clone.classList.add('clone', 'visible');
+                    storyGrid.prepend(clone);
+                });
+
+                const allCards = Array.from(storyGrid.querySelectorAll('.project-card'));
+                let currentIndex = cardCount; // Start at first original card
+                let isTransitioning = false;
+
+                const getCardWidth = () => {
+                    const style = window.getComputedStyle(storyGrid);
+                    const gap = parseInt(style.gap) || 40;
+                    return originalCards[0].offsetWidth + gap;
+                };
+
+                const updatePosition = (animate = true) => {
+                    const cardWidth = getCardWidth();
+                    const offset = -(currentIndex * cardWidth);
+
+                    if (animate) {
+                        storyGrid.style.transition = 'transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)';
+                    } else {
+                        storyGrid.style.transition = 'none';
+                    }
+
+                    // Center correction (the padding-left in CSS affects this)
+                    // The CSS has padding: 0 calc(50% - 175px) on #storyGrid
+                    storyGrid.style.transform = `translateX(${offset}px)`;
+
+                    // Update active card
+                    allCards.forEach(c => c.classList.remove('active'));
+                    if (allCards[currentIndex]) allCards[currentIndex].classList.add('active');
+                };
+
+                // Initial position
+                setTimeout(() => updatePosition(false), 100);
+
+                const moveSlide = (direction) => {
+                    if (isTransitioning) return;
+                    isTransitioning = true;
+
+                    if (direction === 'next') {
+                        currentIndex++;
+                    } else {
+                        currentIndex--;
+                    }
+                    updatePosition(true);
+                };
+
+                storyGrid.addEventListener('transitionend', () => {
+                    isTransitioning = false;
+
+                    if (currentIndex >= cardCount * 2) {
+                        currentIndex = cardCount;
+                        updatePosition(false);
+                    } else if (currentIndex < cardCount) {
+                        currentIndex = cardCount * 2 - 1;
+                        updatePosition(false);
+                    }
+                });
+
+                storyNextBtn.addEventListener('click', () => moveSlide('next'));
+                storyPrevBtn.addEventListener('click', () => moveSlide('prev'));
+
+                window.addEventListener('resize', () => updatePosition(false));
+            }
+
+            // Success Stories Visibility Trigger
+            if (document.getElementById('storyGrid')) {
+                servicesObserver.observe(document.getElementById('storyGrid'));
+            }
+
+        }
+    </script>
+    <script>
+        // --- Stats Counter Animation ---
+        const animateStats = () => {
+            const stats = document.querySelectorAll('.stat-animate');
+
+            const observerOptions = {
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const countTo = parseFloat(target.getAttribute('data-target'));
+                        let currentCount = 0;
+                        const duration = 2000;
+
+                        const timer = setInterval(() => {
+                            currentCount += (countTo / 100);
+                            if (currentCount >= countTo) {
+                                target.innerText = countTo;
+                                clearInterval(timer);
+                            } else {
+                                target.innerText = Math.floor(currentCount);
+                            }
+                        }, 20);
+
+                        observer.unobserve(target);
+                    }
+                });
+            }, observerOptions);
+
+            stats.forEach(stat => observer.observe(stat));
+        };
+
+        window.addEventListener('DOMContentLoaded', animateStats);
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

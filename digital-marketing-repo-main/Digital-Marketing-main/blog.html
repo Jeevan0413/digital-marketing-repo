@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Insights | LearnSpace Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        .home-hero {
+            height: 82vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #FFF7ED 0%, #FFFFFF 100%);
+            padding: 15px 10px;
+        }
+
+        .home-card {
+            max-width: 800px;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(249, 115, 22, 0.1);
+        }
+
+        .home-card h1 {
+            font-size: 3.5rem;
+            color: #111827;
+            margin-bottom: 20px;
+        }
+
+        .home-card p {
+            font-size: 1.25rem;
+            color: #4B5563;
+            margin-bottom: 40px;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- 1. Header/Navigation Bar -->
+    <div class="pill-nav-container">
+        <a href="home.html" class="brand-pill">
+            <i class="fa-solid fa-chart-line"></i>
+            Learnspace <span>Digital</span>
+        </a>
+        <nav class="pill-nav">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropbtn">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="seo-optimization.html">SEO Optimization</a>
+                        <a href="social-media-marketing.html">Social Media</a>
+                        <a href="ppc-advertising.html">PPC Advertising</a>
+                        <a href="content-marketing.html">Content Marketing</a>
+                        <a href="email-marketing.html">Email Marketing</a>
+                        <a href="web-design.html">Web Design</a>
+                    </div>
+                </li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <a href="contact.html#contact" class="cta-pill">Get Started</a>
+    </div>
+
+    <!-- 8. Resources/Blog -->
+    <section id="blog" class="blog reveal mesh-gradient">
+        <div class="container">
+            <!-- Featured Post -->
+            <div class="blog-featured">
+                <div class="featured-card">
+                    <div class="featured-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            alt="Future of AI Marketing">
+                    </div>
+                    <div class="featured-content">
+                        <span class="blog-cat">Featured</span>
+                        <h2 class="reveal slide-in-left">The Future of AI in Digital Marketing: Trends for 2026</h2>
+                        <p style="color: var(--text-muted); margin: 20px 0;">Artificial intelligence is no longer just a
+                            buzzword. Explore how deep learning and generative models are reshaping customer acquisition
+                            and personalization strategies.</p>
+                        <a href="#" class="btn btn-primary magnetic glow-on-hover" style="align-self: flex-start;">Read
+                            Full Insight</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" data-animation="zoom-in">Latest Insights</h2>
+            <p class="section-subtitle">Stay ahead of the curve with our marketing tips.</p>
+
+            <div class="blog-viewport" style="overflow: hidden; padding: 20px 0;">
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&w=800&q=80"
+                                alt="SEO" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-cat">SEO</span>
+                            <h4>SEO Trends to Watch in 2026</h4>
+                            <p style="color: var(--text-muted); margin: 10px 0;">Discover the latest algorithm updates
+                                and
+                                how to stay on top.</p>
+                            <a href="blog-seo-trends.html" style="color: var(--secondary-color); font-weight: 600;">Read
+                                More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=800&q=80"
+                                alt="Social Media" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-cat">Social Media</span>
+                            <h4>Mastering Youtube Shorts for Business</h4>
+                            <p style="color: var(--text-muted); margin: 10px 0;">How to leverage short-form video to
+                                explode
+                                your brand reach.</p>
+                            <a href="blog-youtube-shorts.html"
+                                style="color: var(--secondary-color); font-weight: 600;">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
+                                alt="Marketing Strategy" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-cat">Strategy</span>
+                            <h4>The Content Marketing Funnel</h4>
+                            <p style="color: var(--text-muted); margin: 10px 0;">Guide your customers from awareness to
+                                purchase effectively.</p>
+                            <a href="blog-content-funnel.html"
+                                style="color: var(--secondary-color); font-weight: 600;">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- New Post 4 -->
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+                                alt="Email Marketing" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-cat">Email</span>
+                            <h4>Email Automation Best Practices</h4>
+                            <p style="color: var(--text-muted); margin: 10px 0;">Increase your open rates and
+                                conversions
+                                with personalized tripwires.</p>
+                            <a href="blog-email-automation.html"
+                                style="color: var(--secondary-color); font-weight: 600;">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- New Post 5 -->
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&w=800&q=80"
+                                alt="Branding" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-cat">Branding</span>
+                            <h4>Visual Identity that Converts</h4>
+                            <p style="color: var(--text-muted); margin: 10px 0;">Why color psychology matters more than
+                                you
+                                think in 2026.</p>
+                            <a href="blog-visual-identity.html"
+                                style="color: var(--secondary-color); font-weight: 600;">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- New Post 6 -->
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80"
+                                alt="Technology" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-cat">Technology</span>
+                            <h4>The Rise of Voice Search</h4>
+                            <p style="color: var(--text-muted); margin: 10px 0;">Is your website ready for the
+                                conversational search revolution?</p>
+                            <a href="blog-voice-search.html"
+                                style="color: var(--secondary-color); font-weight: 600;">Read More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Navigation -->
+            <div class="blog-nav-bar">
+                <button class="nav-btn prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="nav-dots">
+                    <span class="nav-dot active"></span>
+                    <span class="nav-dot"></span>
+                    <span class="nav-dot"></span>
+                    <span class="nav-dot"></span>
+                    <span class="nav-dot"></span>
+                    <span class="nav-dot"></span>
+                </div>
+                <button class="nav-btn next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <!-- <div class="newsletter-section">
+        <div class="newsletter-content">
+            <span class="badge" style="background: rgba(255,255,255,0.2); color: white;">Newsletter</span>
+            <h2 style="color:aliceblue">Get Premium Insights in Your Inbox</h2>
+            <p>Join 10,000+ marketers staying ahead with our weekly strategy breakdown.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    </section> -->
+
+    <!-- <main class="home-hero">
+        <div class="home-card">
+            <h1>Thank You For Choosing <span class="highlight">LearnSpace Digital</span></h1>
+            <p>Your journey to digital excellence starts here. Explore our premium marketing solutions and scale your
+                business with data-driven strategies.</p>
+            <a href="digital_marketing_original.html" class="btn btn-primary">Back to Marketing Site</a>
+        </div>
+    </main> -->
+
+
+    <!-- 7. Reviews/Testimonials -->
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Testimonials</span>
+    </div>
+    <section class="testimonials bg-soft-1">
+        <div class="container">
+            <h2 class="section-title">Client Feedback</h2>
+            <p class="section-subtitle">Don't just take our word for it.</p>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <!-- Original Cards -->
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Elevate Digital completely transformed our online presence. Our leads have tripled in just 3
+                            months!"</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Gerogia voll</h4>
+                                <small class="text-muted">CEO, TechFlow</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Professional, responsive, and results-driven. These guys know what they are doing. Highly
+                            recommended."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Stephen hawking</h4>
+                                <small class="text-muted">Founder, UrbanWear</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i></div>
+                        <p>"The ROI we've seen from their PPC campaigns has been incredible. Best investment we've made
+                            this year."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Ellyse perry</h4>
+                                <small class="text-muted">Director, GreenSpace</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Our traffic has increased by 200% since we started working with them. The team is
+                            knowledgeable and responsive."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>lauren Bell</h4>
+                                <small class="text-muted">Marketing Director, NextGen</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Finally an agency that understands our niche market. Their content strategy is spot on."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>David warner</h4>
+                                <small class="text-muted">Founder, EcoLife</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicated Cards for Infinite Loop -->
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Elevate Digital completely transformed our online presence. Our leads have tripled in just 3
+                            months!"</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Georgia voll</h4>
+                                <small class="text-muted">CEO, TechFlow</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Professional, responsive, and results-driven. These guys know what they are doing. Highly
+                            recommended."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Stephen hawking</h4>
+                                <small class="text-muted">Founder, UrbanWear</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i></div>
+                        <p>"The ROI we've seen from their PPC campaigns has been incredible. Best investment we've made
+                            this year."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Ellyse perry</h4>
+                                <small class="text-muted">Director, GreenSpace</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Our traffic has increased by 200% since we started working with them. The team is
+                            knowledgeable and responsive."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Lauren bell</h4>
+                                <small class="text-muted">Marketing Director, NextGen</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Finally an agency that understands our niche market. Their content strategy is spot on."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>David warner</h4>
+                                <small class="text-muted">Founder, EcoLife</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>LearnSpace Digital</h3>
+                    <p>Premium digital marketing solutions for forward-thinking brands. We build strategies that last.
+                    </p>
+                    <div class="social-icons" style="margin-top: 20px;">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="digital_marketing_original.html#home">Home</a></li>
+                        <li><a href="about.html#about-teaser">About Us</a></li>
+                        <li><a href="services.html#services">Services</a></li>
+                        <li><a href="blog.html#blog">Blog</a></li>
+                        <li><a href="contact.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="seo-optimization.html">SEO Optimization</a></li>
+                        <li><a href="social-media-marketing.html">Social Media</a></li>
+                        <li><a href="ppc-advertising.html">PPC Advertising</a></li>
+                        <li><a href="content-marketing.html">Content Marketing</a></li>
+                        <li><a href="web-design.html">Web Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 learnspaceDigital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const blogGrid = document.querySelector('.blog-grid');
+            const blogCards = document.querySelectorAll('.blog-card');
+            const featured = document.querySelector('.blog-featured');
+            const prevBtn = document.querySelector('.nav-btn.prev');
+            const nextBtn = document.querySelector('.nav-btn.next');
+            const dots = document.querySelectorAll('.nav-dot');
+
+            // 1. Entrance Intersection Observer
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (entry.target.classList.contains('blog-featured')) {
+                            entry.target.classList.add('visible');
+                        } else if (entry.target.classList.contains('blog-grid')) {
+                            // Only target original cards for entrance (clones will be visible by default)
+                            const originalCards = entry.target.querySelectorAll('.blog-card:not(.clone)');
+                            originalCards.forEach((card, index) => {
+                                setTimeout(() => card.classList.add('visible'), index * 100);
+                            });
+                        }
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            if (featured) revealObserver.observe(featured);
+            if (blogGrid) revealObserver.observe(blogGrid);
+
+            // 2. Infinite Carousel Logic
+            if (blogGrid && blogCards.length > 0) {
+                const originalCards = Array.from(blogCards);
+                const cardCount = originalCards.length;
+
+                // Clone cards
+                originalCards.forEach(card => {
+                    const clone = card.cloneNode(true);
+                    clone.classList.add('clone', 'visible');
+                    blogGrid.appendChild(clone);
+                });
+                originalCards.reverse().forEach(card => {
+                    const clone = card.cloneNode(true);
+                    clone.classList.add('clone', 'visible');
+                    blogGrid.prepend(clone);
+                });
+
+                const allCards = Array.from(blogGrid.querySelectorAll('.blog-card'));
+                let currentIndex = cardCount;
+                let isTransitioning = false;
+
+                const getCardWidth = () => {
+                    const firstCard = allCards[0];
+                    const style = window.getComputedStyle(blogGrid);
+                    const gap = parseInt(style.gap) || 30;
+                    return firstCard.offsetWidth + gap;
+                };
+
+                const updatePosition = (animate = true) => {
+                    const cardWidth = getCardWidth();
+                    if (animate) {
+                        blogGrid.style.transition = 'transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)';
+                    } else {
+                        blogGrid.style.transition = 'none';
+                    }
+                    blogGrid.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+
+                    // Update Dots
+                    const activeIndex = (currentIndex - cardCount + cardCount) % cardCount;
+                    dots.forEach((dot, i) => dot.classList.toggle('active', i === activeIndex));
+                };
+
+                // Initialize
+                setTimeout(() => updatePosition(false), 100);
+
+                const moveSlide = (direction) => {
+                    if (isTransitioning) return;
+                    isTransitioning = true;
+                    if (direction === 'next') currentIndex++;
+                    else currentIndex--;
+                    updatePosition(true);
+                };
+
+                blogGrid.addEventListener('transitionend', () => {
+                    isTransitioning = false;
+                    if (currentIndex >= cardCount * 2) {
+                        currentIndex = cardCount;
+                        updatePosition(false);
+                    } else if (currentIndex < cardCount) {
+                        currentIndex = cardCount * 2 - 1;
+                        updatePosition(false);
+                    }
+                });
+
+                if (nextBtn) nextBtn.addEventListener('click', () => moveSlide('next'));
+                if (prevBtn) prevBtn.addEventListener('click', () => moveSlide('prev'));
+
+                dots.forEach((dot, i) => {
+                    dot.addEventListener('click', () => {
+                        if (isTransitioning) return;
+                        currentIndex = cardCount + i;
+                        updatePosition(true);
+                    });
+                });
+
+                window.addEventListener('resize', () => updatePosition(false));
+            }
+
+            // 3. Mobile Menu Toggle
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

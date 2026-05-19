@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | LearnSpace Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="pill-nav-container">
+        <a href="home.html" class="brand-pill">
+            <i class="fa-solid fa-chart-line"></i>
+            Learnspace <span>Digital</span>
+        </a>
+        <nav class="pill-nav">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropbtn">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="seo-optimization.html">SEO Optimization</a>
+                        <a href="social-media-marketing.html">Social Media</a>
+                        <a href="ppc-advertising.html">PPC Advertising</a>
+                        <a href="content-marketing.html">Content Marketing</a>
+                        <a href="email-marketing.html">Email Marketing</a>
+                        <a href="web-design.html">Web Design</a>
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <a href="contact.html#contact" class="cta-pill">Get Started</a>
+    </div>
+
+    <!-- 2. Hero Section -->
+    <!-- <section class="hero-v2 reveal zoom-in mesh-gradient" style="min-height: 60vh; padding: 60px 10px;">
+        <div class="container hero-v2-container">
+            <div class="hero-v2-card">
+                <span class="badge">Our Impact</span>
+                <h1 data-animation="zoom-in">Results That Speak <span class="highlight gradient-text">Volumes</span>
+                </h1>
+                <p>Explore how we've helped diverse businesses scale their presence and smash their growth targets
+                    through data-driven creativity.</p>
+            </div>
+        </div>
+        <div class="hero-v2-bg-elements">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+    </section> -->
+
+    <!-- 3. About Teaser -->
+    <!-- <section id="about-teaser" class="about-teaser animated-gradient-bg">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="badge">About Us</span>
+                    <h2>More Than Just a Marketing Agency</h2>
+                    <p>We are your strategic growth partners. With over a decade of experience, we've helped 500+ brands
+                        redefine their digital presence and achieve unprecedented ROI.</p>
+                    <div class="about-stats" style="margin-bottom: 30px;">
+                        <div class="stat-card">
+                            <span class="stat-number">10yr+</span>
+                            <span class="stat-label">Experience</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Retention</span>
+                        </div>
+                    </div>
+                    <a href="#story" class="btn btn-primary magnetic glow-on-hover">Our Full Story</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
+                        alt="Strategy Session">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- 3. Our Story: Split-Section Design -->
+    <section id="story" class="split-section bg-soft-1" style="padding: 100px 0; position: relative; z-index: 1;">
+        <div class="split-container">
+            <div class="split-content-side stagger-container">
+                <span class="badge stagger-fade-item" style="margin-bottom: 20px;">Our Legacy</span>
+                <h2 class="display-title stagger-fade-item">Fueling Brands with <span
+                        class="highlight">Innovation</span></h2>
+                <p class="lead-text stagger-fade-item">Founded in 2015, LearnSpace Digital emerged with a single
+                    mission: to empower
+                    businesses by navigating the complexities of the digital landscape with clarity and creativity.</p>
+                <p class="stagger-fade-item"
+                    style="margin-bottom: 30px; font-size: 1.1rem; color: var(--text-muted); line-height: 1.7;">By
+                    combining deep-dive data analytics with boundary-pushing creative vision, we help brands find their
+                    authentic voice in a crowded marketplace. Our team of experts works tirelessly to ensure that every
+                    campaign, every design, and every line of code serves a higher purpose—transforming your vision into
+                    a digital legacy.</p>
+
+                <div class="floating-cards-container stagger-fade-item">
+                    <style>
+                        .float-card {
+                            background: var(--bg-dark) !important;
+                            border: 1px solid rgba(255, 255, 255, 0.05) !important;
+                            box-shadow: var(--shadow-md) !important;
+                        }
+                    </style>
+                    <!-- Stat Card 1 -->
+                    <div class="float-card" style="--delay: 0.1s;">
+                        <div class="float-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <div class="float-info">
+                            <span class="float-num stat-animate" data-target="500">0</span><span
+                                class="highlight">+</span>
+                            <span class="float-lab">Projects Delivered</span>
+                        </div>
+                    </div>
+                    <!-- Stat Card 2 -->
+                    <div class="float-card highlight-card" style="--delay: 0.3s; transform: translate(40px, -20px);">
+                        <div class="float-icon"><i class="fa-solid fa-heart"></i></div>
+                        <div class="float-info">
+                            <span class="float-num stat-animate" data-target="98">0</span><span
+                                class="highlight">%</span>
+                            <span class="float-lab">Client Love</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="split-image-side">
+                <style>
+                    .legacy-slider {
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 24px;
+                        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .slider-wrapper {
+                        position: relative;
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    .slider-wrapper img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        opacity: 0;
+                        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+                        transform: scale(1.1);
+                    }
+
+                    .slider-wrapper img.active {
+                        opacity: 1;
+                        transform: scale(1);
+                        z-index: 1;
+                    }
+
+                    .slider-btn {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: #fff;
+                        color: #3b82f6;
+                        border: none;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        z-index: 20;
+                        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                        font-size: 1.5rem;
+                        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+                    }
+
+                    .slider-btn:hover {
+                        background: #f8fafc;
+                        transform: translateY(-50%) scale(1.1);
+                        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+                    }
+
+                    .prev-btn {
+                        left: -35px;
+                    }
+
+                    .next-btn {
+                        right: -35px;
+                    }
+
+                    .experience-badge {
+                        z-index: 25;
+                    }
+                </style>
+                <div class="parallax-wrapper">
+                    <div class="parallax-img-container legacy-slider" id="legacySlider">
+                        <div class="slider-wrapper">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                alt="Team Collaboration" class="parallax-element active">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+                                alt="Strategy Session" class="parallax-element">
+                            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80"
+                                alt="Digital Innovation" class="parallax-element">
+                        </div>
+                        <button class="slider-btn prev-btn" onclick="moveSlider(-1)"><i
+                                class="fa-solid fa-arrow-left"></i></button>
+                        <button class="slider-btn next-btn" onclick="moveSlider(1)"><i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number stat-animate" data-target="10">0</span>
+                        <span class="exp-text">Years Of Excellence</span>
+                    </div>
+                </div>
+                <script>
+                    let currentSlide = 0;
+                    const slides = document.querySelectorAll('#legacySlider .slider-wrapper img');
+
+                    function moveSlider(direction) {
+                        slides[currentSlide].classList.remove('active');
+                        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+                        slides[currentSlide].classList.add('active');
+                    }
+
+                    setInterval(() => moveSlider(1), 5000);
+                </script>
+            </div>
+        </div>
+    </section>
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Our Mission</span>
+    </div>
+    <section id="mission" class="mission-section bg-soft-1">
+        <style>
+            .mission-section {
+                padding: 100px 0;
+                position: relative;
+                z-index: 2;
+                overflow: hidden;
+            }
+
+            .mission-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 60px;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 40px;
+            }
+
+            .mission-visual-side {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .mission-text-side {
+                flex: 1.2;
+                max-width: 600px;
+            }
+
+            /* Rocket Styles & Animations */
+            .rocket-container {
+                position: relative;
+                width: 320px;
+                height: 420px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .rocket-graphic {
+                animation: rocket-float 4s ease-in-out infinite;
+                z-index: 3;
+                filter: drop-shadow(0 20px 30px rgba(95, 39, 205, 0.1));
+            }
+
+            @keyframes rocket-float {
+
+                0%,
+                100% {
+                    transform: translateY(0) rotate(0deg);
+                }
+
+                50% {
+                    transform: translateY(-30px) rotate(1deg);
+                }
+            }
+
+            .smoke-base {
+                position: absolute;
+                bottom: 20px;
+                width: 300px;
+                opacity: 0.7;
+                animation: smoke-pulse 4s ease-in-out infinite;
+                z-index: 2;
+            }
+
+            @keyframes smoke-pulse {
+
+                0%,
+                100% {
+                    transform: scale(1);
+                    opacity: 0.7;
+                }
+
+                50% {
+                    transform: scale(1.08);
+                    opacity: 0.5;
+                }
+            }
+
+            .mission-text-side h2 {
+                font-family: 'Outfit', sans-serif;
+                font-size: 3.2rem;
+                color: var(--text-main);
+                margin-bottom: 24px;
+                line-height: 1.1;
+            }
+
+            .mission-text-side p {
+                font-size: 1.2rem;
+                color: var(--text-muted);
+                line-height: 1.8;
+                margin-bottom: 30px;
+            }
+
+            .mission-pillars {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+            }
+
+            .pillar-item {
+                background: #664288;
+                padding: 24px;
+                border-radius: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+                border: 1px solid #f3f4f6;
+                transition: transform 0.3s ease;
+            }
+
+            .pillar-item:hover {
+                transform: translateY(-5px);
+            }
+
+            .pillar-item i {
+                font-size: 1.8rem;
+                color: var(--primary);
+                margin-bottom: 16px;
+                display: block;
+            }
+
+            .pillar-item h4 {
+                font-size: 1.2rem;
+                margin-bottom: 8px;
+                color: #111827;
+            }
+
+            .pillar-item p {
+                font-size: 0.95rem;
+                margin-bottom: 0;
+                line-height: 1.5;
+            }
+
+            @media (max-width: 992px) {
+                .mission-container {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 50px;
+                }
+
+                .mission-pillars {
+                    grid-template-columns: 1fr;
+                }
+
+                .rocket-container {
+                    height: 350px;
+                }
+            }
+        </style>
+
+        <div class="mission-container">
+            <!-- Rocket Visual Side -->
+            <div class="mission-visual-side">
+                <div class="rocket-container">
+                    <div class="rocket-graphic">
+                        <svg width="200" height="280" viewBox="0 0 200 280" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <!-- Left Fin -->
+                            <path d="M50 180L10 240H60L50 180Z" fill="var(--neon-purple)" stroke="var(--neon-purple)"
+                                stroke-width="2" />
+                            <!-- Right Fin -->
+                            <path d="M150 180L190 240H140L150 180Z" fill="var(--neon-purple)"
+                                stroke="var(--neon-purple)" stroke-width="2" />
+
+                            <!-- Main Rocket Body -->
+                            <path d="M60 90C60 40 100 0 100 0C100 0 140 40 140 90V220H60V90Z" fill="white"
+                                stroke="var(--primary-color)" stroke-width="4" />
+
+                            <!-- Nose Cone (Teal) -->
+                            <path d="M60 90C60 40 100 0 100 0C100 0 140 40 140 90H60Z" fill="var(--neon-cyan)"
+                                stroke="var(--neon-cyan)" stroke-width="2" />
+
+                            <!-- Window Port -->
+                            <circle cx="100" cy="115" r="28" fill="#e0e7ff" stroke="var(--primary-color)"
+                                stroke-width="3" />
+                            <circle cx="100" cy="115" r="20" fill="white" fill-opacity="0.6" />
+                            <rect x="95" y="105" width="20" height="4" rx="2" transform="rotate(-45 95 105)"
+                                fill="white" />
+
+                            <!-- Body Lines (Blue Detail) -->
+                            <line x1="60" y1="185" x2="140" y2="185" stroke="var(--primary-color)" stroke-width="2"
+                                stroke-dasharray="6 4" />
+                            <line x1="60" y1="200" x2="140" y2="200" stroke="var(--primary-color)" stroke-width="2"
+                                stroke-dasharray="6 4" />
+
+                            <!-- Engine Base (Teal) -->
+                            <rect x="55" y="215" width="90" height="15" rx="7.5" fill="var(--neon-cyan)" />
+                        </svg>
+                    </div>
+                    <!-- Exhaust Smoke Graphics -->
+                    <div class="smoke-base">
+                        <svg width="300" height="100" viewBox="0 0 300 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 100C0 70 30 50 70 50C100 50 120 70 140 70C160 70 180 40 210 40C240 40 270 60 300 60V100H0Z"
+                                fill="var(--neon-emerald)" fill-opacity="0.8" />
+                            <path
+                                d="M40 100C40 85 60 75 90 75C120 75 130 90 150 90C170 90 190 70 220 70C250 70 270 85 300 85V100H40Z"
+                                fill="var(--neon-purple)" fill-opacity="0.5" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission Content Text Side -->
+            <div class="mission-text-side">
+                <span class="badge" style="margin-bottom: 20px;">Our mission</span>
+                <h2>Transforming Ambition Into <span class="highlight">Digital Reality</span></h2>
+                <p>Our mission is to empower businesses of every size with bold, data-backed digital strategies that
+                    create lasting impact — turning vision into measurable growth.</p>
+
+                <div class="mission-pillars">
+                    <div class="pillar-item">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h4>Launch</h4>
+                        <p>Accelerating brands with innovative digital entry strategies.</p>
+                    </div>
+                    <div class="pillar-item">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h4>Scale</h4>
+                        <p>Ensuring sustainable growth through data analytics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 4. Core Values -->
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Our Values</span>
+    </div>
+    <section class="values-section bg-soft-2" style="padding: 100px 0; position: relative; z-index: 1;">
+        <div class="container">
+            <h2 class="section-title">Our Core Values</h2>
+            <p class="section-subtitle">The principles that guide every decision we make.</p>
+
+            <!-- Puzzle Animation -->
+            <style>
+                .puzzle-scene {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 40px 0 60px;
+                    min-height: 370px;
+                    position: relative;
+                    overflow: visible;
+                }
+
+                .puzzle-svg-wrap {
+                    position: relative;
+                    width: 320px;
+                    height: 320px;
+                    overflow: visible;
+                }
+
+                .puzzle-piece {
+                    position: absolute;
+                    opacity: 0;
+                    animation-fill-mode: both;
+                    animation-timing-function: cubic-bezier(0.24, 1.1, 0.32, 1);
+                }
+
+                /* Drop + Rotate + Bounce-fit + Stay + Fade Out (looping) */
+                @keyframes puzzle-loop {
+
+                    /* Start: high above, invisible, spinning */
+                    0% {
+                        transform: translateY(-600px) rotate(-360deg);
+                        opacity: 0;
+                    }
+
+                    /* Become visible as it starts falling */
+                    4% {
+                        opacity: 1;
+                        transform: translateY(-600px) rotate(-360deg);
+                    }
+
+                    /* Still falling and rotating fast */
+                    14% {
+                        transform: translateY(30px) rotate(20deg);
+                        opacity: 1;
+                    }
+
+                    /* Bounce back slightly (overshoot correction) */
+                    18% {
+                        transform: translateY(-10px) rotate(-8deg);
+                        opacity: 1;
+                    }
+
+                    /* Settle perfectly into place */
+                    22% {
+                        transform: translateY(0) rotate(0deg);
+                        opacity: 1;
+                    }
+
+                    /* Hold assembled position */
+                    78% {
+                        transform: translateY(0) rotate(0deg);
+                        opacity: 1;
+                    }
+
+                    /* Fade out cleanly */
+                    88% {
+                        transform: translateY(0) rotate(0deg);
+                        opacity: 0;
+                    }
+
+                    /* Invisible reset back to top */
+                    100% {
+                        transform: translateY(-600px) rotate(-360deg);
+                        opacity: 0;
+                    }
+                }
+
+                /* Base positions */
+                .piece-1 {
+                    top: 0;
+                    left: 0;
+                    z-index: 4;
+                }
+
+                .piece-2 {
+                    top: 0;
+                    left: 160px;
+                    z-index: 3;
+                }
+
+                .piece-3 {
+                    top: 160px;
+                    left: 0;
+                    z-index: 2;
+                }
+
+                .piece-4 {
+                    top: 160px;
+                    left: 160px;
+                    z-index: 1;
+                }
+
+                /* Trigger on .active class (Scroll-based) with infinite loop */
+                /* Each piece has a staggered delay so they drop one by one */
+                .puzzle-scene.active .piece-1 {
+                    animation: puzzle-loop 8s 0s infinite both;
+                    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+                }
+
+                .puzzle-scene.active .piece-2 {
+                    animation: puzzle-loop 8s 0.4s infinite both;
+                    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+                }
+
+                .puzzle-scene.active .piece-3 {
+                    animation: puzzle-loop 8s 0.8s infinite both;
+                    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+                }
+
+                .puzzle-scene.active .piece-4 {
+                    animation: puzzle-loop 8s 1.2s infinite both;
+                    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+                }
+            </style>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const scene = document.getElementById('puzzleScene');
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                scene.classList.add('active');
+                                observer.unobserve(scene); // Only animate once
+                            }
+                        });
+                    }, { threshold: 0.2 });
+
+                    if (scene) observer.observe(scene);
+                });
+            </script>
+
+            <style>
+                .values-row-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 60px;
+                    margin-top: 50px;
+                }
+
+                .values-puzzle-col {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    min-width: 350px;
+                    overflow: visible;
+                }
+
+                .values-cards-col {
+                    flex: 1;
+                    max-width: 500px;
+                }
+
+                .values-grid {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    /* Stack cards vertically in the side column */
+                    gap: 25px;
+                }
+
+                @media (max-width: 992px) {
+                    .values-row-container {
+                        flex-direction: column;
+                        gap: 40px;
+                    }
+
+                    .values-puzzle-col {
+                        min-width: auto;
+                    }
+
+                    .values-cards-col {
+                        max-width: 100%;
+                    }
+                }
+            </style>
+
+            <div class="values-row-container">
+                <!-- Left Column: Puzzle -->
+                <div class="values-puzzle-col">
+                    <div class="puzzle-scene" id="puzzleScene">
+                        <div class="puzzle-svg-wrap">
+                            <!-- Piece 1: Top-Left (Right Bump, Bottom Bump) -->
+                            <div class="puzzle-piece piece-1">
+                                <svg width="175" height="175" viewBox="0 0 175 175" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M 0,0 H 160 V 65 Q 175,65 175,80 Q 175,95 160,95 V 160 H 95 Q 95,175 80,175 Q 65,175 65,160 H 0 V 0 Z"
+                                        fill="none" stroke="var(--neon-purple)" stroke-width="3.5"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <!-- Piece 2: Top-Right (Left Indent, Bottom Bump) -->
+                            <div class="puzzle-piece piece-2">
+                                <svg width="175" height="175" viewBox="0 0 175 175" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M 0,0 H 160 V 160 H 95 Q 95,175 80,175 Q 65,175 65,160 H 0 V 95 Q 15,95 15,80 Q 15,65 0,65 V 0 Z"
+                                        fill="var(--neon-cyan)" stroke="var(--neon-cyan)" stroke-width="2"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <!-- Piece 3: Bottom-Left (Top Indent, Right Bump) -->
+                            <div class="puzzle-piece piece-3">
+                                <svg width="175" height="175" viewBox="0 0 175 175" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M 0,0 H 65 Q 65,15 80,15 Q 95,15 95,0 H 160 V 65 Q 175,65 175,80 Q 175,95 160,95 V 160 H 0 V 0 Z"
+                                        fill="var(--neon-emerald)" stroke="var(--neon-emerald)" stroke-width="2"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <!-- Piece 4: Bottom-Right (Top Indent, Left Indent) -->
+                            <div class="puzzle-piece piece-4">
+                                <svg width="175" height="175" viewBox="0 0 175 175" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M 0,0 H 65 Q 65,15 80,15 Q 95,15 95,0 H 160 V 160 H 0 V 95 Q 15,95 15,80 Q 15,65 0,65 V 0 Z"
+                                        fill="none" stroke="var(--accent-color)" stroke-width="3.5"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Values Cards -->
+                <div class="values-cards-col">
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <h3>Passion</h3>
+                            <p>We love what we do, and it shows in the energy we bring to every client project.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon"><i class="fa-solid fa-bullseye"></i></div>
+                            <h3>Precision</h3>
+                            <p>Every pixel, every word, and every line of code is crafted with meticulous attention
+                                to
+                                detail.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon"><i class="fa-solid fa-rocket"></i></div>
+                            <h3>Performance</h3>
+                            <p>We are obsessed with results. If it doesn't move the needle, we don't do it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Leadership Team -->
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Leadership</span>
+    </div>
+    <section class="team-section bg-soft-1" style="padding: 100px 0; position: relative; z-index: 1;">
+        <div class="container">
+            <h2 class="section-title">The Minds Behind LearnSpace</h2>
+            <p class="section-subtitle">Meet our leadership team of industry experts.</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="https://www.shutterstock.com/image-illustration/ceo-icon-manager-illustartion-600nw-1857126589.jpg"
+                            alt="Sarah Johnson">
+                    </div>
+                    <div class="team-info">
+                        <h4>Raghu Vamshi</h4>
+                        <span class="team-role">Founder & CEO</span>
+                        <!-- <p>15+ years of experience in digital transformation for Fortune 500 companies.</p> -->
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvXea5d-MNkRufdRao2cItjnxVtTn9xkP1j1yocFmPgQ&s"
+                            alt="Marcus Chen">
+                    </div>
+                    <div class="team-info">
+                        <h4>Varalaxmi</h4>
+                        <span class="team-role">Head of Strategy & COO</span>
+                        <!-- <p>Specialist in data analytics and consumer behavior modeling.</p> -->
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRlxzr_XTrP3GHTNMhvQcfIbSfBLrq0A5XBw&s"
+                            alt="Elena Rodriguez">
+                    </div>
+                    <div class="team-info">
+                        <h4>shridhar kulkarni</h4>
+                        <span class="team-role">Creative Director</span>
+                        <!-- <p>Award-winning designer focused on building narrative-driven brand identities.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Our Journey (Timeline) -->
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Our History</span>
+    </div>
+    <section class="timeline-section bg-soft-1" style="padding: 100px 0; position: relative; z-index: 1;">
+        <div class="container">
+            <h2 class="section-title">Our Journey</h2>
+            <p class="section-subtitle">How we became a leader in digital marketing.</p>
+            <div class="funnel-journey-wrapper">
+                <div class="funnel-viz-container">
+                    <div class="funnel-viz">
+                        <div class="funnel-stage stage-0 active" style="--stage-index: 0;">
+                            <div class="funnel-ring"></div>
+                            <div class="stage-label"><i class="fa-solid fa-arrow-down"></i></div>
+                        </div>
+                        <div class="funnel-stage stage-1" style="--stage-index: 1;">
+                            <div class="funnel-ring"></div>
+                            <div class="stage-label"><i class="fa-solid fa-arrow-down"></i></div>
+                        </div>
+                        <div class="funnel-stage stage-2" style="--stage-index: 2;">
+                            <div class="funnel-ring"></div>
+                            <div class="stage-label"><i class="fa-solid fa-arrow-down"></i></div>
+                        </div>
+                        <div class="funnel-stage stage-3" style="--stage-index: 3;">
+                            <div class="funnel-ring"></div>
+                            <div class="stage-label"><i class="fa-solid fa-arrow-down"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="funnel-menu">
+                    <div class="funnel-item active" data-index="0">
+                        <div class="funnel-item-header">
+                            <span class="funnel-year">2015</span>
+                            <h4>The Beginning</h4>
+                        </div>
+                        <div class="funnel-item-content">
+                            <p>LearnSpace Digital was founded in a small garage in Hyderabad, starting with a vision to
+                                revolutionize digital growth.</p>
+                        </div>
+                    </div>
+                    <div class="funnel-item" data-index="1">
+                        <div class="funnel-item-header">
+                            <span class="funnel-year">2018</span>
+                            <h4>First 100 Clients</h4>
+                        </div>
+                        <div class="funnel-item-content">
+                            <p>Reached a major milestone and expanded our team to 20 experts, moving to our first
+                                official headquarters.</p>
+                        </div>
+                    </div>
+                    <div class="funnel-item" data-index="2">
+                        <div class="funnel-item-header">
+                            <span class="funnel-year">2021</span>
+                            <h4>Global Expansion</h4>
+                        </div>
+                        <div class="funnel-item-content">
+                            <p>Opened our first international office and launched our proprietary SaaS platform for
+                                data-driven marketing.</p>
+                        </div>
+                    </div>
+                    <div class="funnel-item" data-index="3">
+                        <div class="funnel-item-header">
+                            <span class="funnel-year">2026</span>
+                            <h4>Industry Leader</h4>
+                        </div>
+                        <div class="funnel-item-content">
+                            <p>Recognized as the #1 boutique marketing agency for ROI-driven strategies, serving clients
+                                worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="digital_marketing_original.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back
+                    to Homepage</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Why Choose Us -->
+    <!-- <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">What sets us apart from the competition.</p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon-box"><i class="fa-solid fa-users-gear"></i></div>
+                    <div class="feature-text">
+                        <h3>Expert Team</h3> -->
+    <!-- <p class="text-muted">Certified professionals with years of industry experience.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                    <div class="feature-text">
+                        <h3>Data-Driven</h3>
+                        <p class="text-muted">We make decisions based on analytics, not guesswork.</p>
+                    </div>
+                </div> -->
+    <!-- <div class="feature-item">
+                    <div class="feature-icon-box"><i class="fa-solid fa-tags"></i></div>
+                    <div class="feature-text">
+                        <h3>Affordable Pricing</h3>
+                        <p class="text-muted">Premium services tailored to fit your budget.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon-box"><i class="fa-solid fa-headset"></i></div>
+                    <div class="feature-text">
+                        <h3>24/7 Support</h3>
+                        <p class="text-muted">Dedicated account managers always ready to help.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    7. Reviews/Testimonials -->
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Testimonials</span>
+    </div>
+    <section class="testimonials bg-soft-1">
+        <div class="container">
+            <h2 class="section-title">Client Feedback</h2>
+            <p class="section-subtitle">Don't just take our word for it.</p>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <!-- Original Cards -->
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Elevate Digital completely transformed our online presence. Our leads have tripled in just 3
+                            months!"</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Gerogia voll</h4>
+                                <small class="text-muted">CEO, TechFlow</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Professional, responsive, and results-driven. These guys know what they are doing. Highly
+                            recommended."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Stephen hawking</h4>
+                                <small class="text-muted">Founder, UrbanWear</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i></div>
+                        <p>"The ROI we've seen from their PPC campaigns has been incredible. Best investment we've made
+                            this year."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Ellyse perry</h4>
+                                <small class="text-muted">Director, GreenSpace</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Our traffic has increased by 200% since we started working with them. The team is
+                            knowledgeable and responsive."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>lauren Bell</h4>
+                                <small class="text-muted">Marketing Director, NextGen</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Finally an agency that understands our niche market. Their content strategy is spot on."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>David warner</h4>
+                                <small class="text-muted">Founder, EcoLife</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicated Cards for Infinite Loop -->
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Elevate Digital completely transformed our online presence. Our leads have tripled in just 3
+                            months!"</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Georgia voll</h4>
+                                <small class="text-muted">CEO, TechFlow</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Professional, responsive, and results-driven. These guys know what they are doing. Highly
+                            recommended."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Stephen hawking</h4>
+                                <small class="text-muted">Founder, UrbanWear</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i></div>
+                        <p>"The ROI we've seen from their PPC campaigns has been incredible. Best investment we've made
+                            this year."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Ellyse perry</h4>
+                                <small class="text-muted">Director, GreenSpace</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Our traffic has increased by 200% since we started working with them. The team is
+                            knowledgeable and responsive."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>Lauren bell</h4>
+                                <small class="text-muted">Marketing Director, NextGen</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
+                        <p>"Finally an agency that understands our niche market. Their content strategy is spot on."</p>
+                        <div class="client-info">
+                            <div>
+                                <h4>David warner</h4>
+                                <small class="text-muted">Founder, EcoLife</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <main class="home-hero">
+        <div class="home-card">
+            <h1>Thank You For Choosing <span class="highlight">LearnSpace Digital</span></h1>
+            <p>Your journey to digital excellence starts here. Explore our premium marketing solutions and scale your
+                business with data-driven strategies.</p>
+            <a href="digital_marketing_original.html" class="btn btn-primary">Back to Marketing Site</a>
+        </div>
+    </main> -->
+
+
+    <!-- Team Section -->
+    <!-- <section class="team-section reveal">
+        <div class="container">
+            <h2 class="section-title">Meet Our Experts</h2>
+            <p class="section-subtitle">A team of dedicated professionals driven by results and innovation.</p>
+
+            <div class="team-grid"> -->
+    <!-- Team Member 1 -->
+    <!-- <div class="team-card">
+                    <div class="team-image-box">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Alex Rivera">
+                    </div>
+                    <div class="team-info">
+                        <h3>Alex Rivera</h3>
+                        <p>CEO & Founder</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+
+    <!-- Team Member 2 -->
+    <!-- <div class="team-card">
+                    <div class="team-image-box">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Sarah Johnson">
+                    </div>
+                    <div class="team-info">
+                        <h3>Sarah Johnson</h3>
+                        <p>Head of Strategy</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+
+    <!-- Team Member 3 -->
+    <!-- <div class="team-card">
+                    <div class="team-image-box">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Michael Chen">
+                    </div>
+                    <div class="team-info">
+                        <h3>Michael Chen</h3>
+                        <p>SEO Director</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+
+    <!-- Team Member 4 -->
+    <!-- <div class="team-card">
+                    <div class="team-image-box">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Emma Wilson">
+                    </div>
+                    <div class="team-info">
+                        <h3>Emma Wilson</h3>
+                        <p>Creative Lead</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- 11. Footer -->
+    <!-- 11. Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>LearnSpace Digital</h3>
+                    <p>Premium digital marketing solutions for forward-thinking brands. We build strategies that last.
+                    </p>
+                    <div class="social-icons" style="margin-top: 20px;">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="digital_marketing_original.html#home">Home</a></li>
+                        <li><a href="about.html#about-teaser">About Us</a></li>
+                        <li><a href="services.html#services">Services</a></li>
+                        <li><a href="blog.html#blog">Blog</a></li>
+                        <li><a href="contact.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="seo-optimization.html">SEO Optimization</a></li>
+                        <li><a href="social-media-marketing.html">Social Media</a></li>
+                        <li><a href="ppc-advertising.html">PPC Advertising</a></li>
+                        <li><a href="content-marketing.html">Content Marketing</a></li>
+                        <li><a href="email-marketing.html">Email Marketing</a></li>
+                        <li><a href="web-design.html">Web Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 learnspaceDigital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        {
+            // --- Parallax Effect ---
+            const parallaxImg = document.querySelector('.parallax-element');
+            window.addEventListener('scroll', () => {
+                const scrollValue = window.scrollY;
+                const splitSection = document.getElementById('story');
+                if (splitSection && parallaxImg) {
+                    const sectionTop = splitSection.offsetTop;
+                    const sectionHeight = splitSection.offsetHeight;
+
+                    // Only run when section is in view
+                    if (scrollValue > sectionTop - window.innerHeight && scrollValue < sectionTop + sectionHeight) {
+                        const relativeScroll = scrollValue - sectionTop;
+                        parallaxImg.style.transform = `translateY(${relativeScroll * 0.15}px)`;
+                    }
+                }
+            });
+
+            // --- Intersection Observer for Reveal Animations ---
+            const observerOptions = {
+                threshold: 0.2
+            };
+
+            const localRevealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.float-card, .split-content-side, .split-image-side').forEach(el => {
+                localRevealObserver.observe(el);
+            });
+
+            // --- Stats Counter Animation ---
+            const animateStats = () => {
+                const stats = document.querySelectorAll('.stat-animate');
+
+                const statObserverOptions = {
+                    threshold: 0.5
+                };
+
+                const statObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const target = entry.target;
+                            const countTo = parseInt(target.getAttribute('data-target'));
+                            let currentCount = 0;
+                            const duration = 2000; // 2 seconds
+
+                            const timer = setInterval(() => {
+                                currentCount += Math.ceil(countTo / 100);
+                                if (currentCount >= countTo) {
+                                    target.innerText = countTo;
+                                    clearInterval(timer);
+                                } else {
+                                    target.innerText = currentCount;
+                                }
+                            }, 20);
+
+                            statObserver.unobserve(target);
+                        }
+                    });
+                }, statObserverOptions);
+
+                stats.forEach(stat => statObserver.observe(stat));
+            };
+
+            window.addEventListener('DOMContentLoaded', animateStats);
+
+            // --- Funnel Interaction ---
+            const funnelItems = document.querySelectorAll('.funnel-item');
+            const funnelStages = document.querySelectorAll('.funnel-stage');
+
+            funnelStages.forEach((stage, index) => {
+                stage.addEventListener('mouseenter', () => {
+                    // Update menu items
+                    funnelItems.forEach(i => i.classList.remove('active'));
+                    const targetItem = document.querySelector(`.funnel-item[data-index="${index}"]`);
+                    if (targetItem) targetItem.classList.add('active');
+
+                    // Update funnel stages
+                    funnelStages.forEach(s => s.classList.remove('active'));
+                    stage.classList.add('active');
+                });
+            });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
