@@ -9,7 +9,7 @@ const serviceData = {
     badge: 'Advanced SEO Strategies',
     heroH1: 'Command the First Page with Search Excellence',
     heroP: 'We combine technical precision with creative strategy to build digital authority that lasts. Stop being found; start being chosen.',
-    heroImg: 'https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    heroImg: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80',
     pillarsTitle: 'The Three Pillars of SEO Success',
     pillars: [
       { title: 'Semantic Intelligence', icon: 'fa-magnifying-glass-chart', desc: 'Beyond keywords. We map user intent to your content, ensuring you capture high-value traffic ready to convert.' },
@@ -17,7 +17,7 @@ const serviceData = {
       { title: 'Authority Building', icon: 'fa-shield-halved', desc: 'We earn high-quality digital footprints through premium content and strategic PR, cementing your market leadership.' }
     ],
     processTitle: 'How SEO Helps Digital Marketing',
-    processImg: 'https://images.openai.com/static-rsc-3/yb_UKRqqpt2Ec-Dc1e_W4GlTe43vgWtOIMw0TNyOy-v22wBCfF71u_SYIpPagEPSoqXFzlQe2x1anW5vGlXPzqGMUtDj-nh6N2OlH5IBaus?purpose=fullsize&v=1',
+    processImg: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
     processItems: [
       { title: 'Increases Organic Traffic', desc: 'SEO attracts visitors without paid ads, reducing marketing costs.' },
       { title: 'Improves Brand Visibility', desc: 'Higher rankings mean more exposure and brand recognition.' },
@@ -37,7 +37,7 @@ const serviceData = {
     badge: 'Social Growth Engine',
     heroH1: 'Ignite Your Brand with Social Authority',
     heroP: 'We craft data-backed social strategies that spark conversations, build loyal communities, and drive measurable ROI for your brand.',
-    heroImg: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    heroImg: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80',
     pillarsTitle: 'The Three Pillars of Social Impact',
     pillars: [
       { title: 'Community Engagement', icon: 'fa-comments', desc: "We don't just speak to your audience; we build relationships. Our community management ensures your brand stays human and heard." },
@@ -45,7 +45,7 @@ const serviceData = {
       { title: 'Targeted Advertising', icon: 'fa-bullseye', desc: 'Scaling your reach with surgical precision. Our paid social specialists ensure every dollar spent drives high-intent traffic.' }
     ],
     processTitle: 'How Social Media Drives Growth',
-    processImg: 'https://images.unsplash.com/photo-1557838923-2985c318be48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    processImg: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80',
     processItems: [
       { title: 'Amplifies Brand Voice', desc: 'Consistent, high-quality messaging that resonates with your core demographic.' },
       { title: 'Drives Customer Loyalty', desc: 'Direct engagement builds trust and turns one-time buyers into lifelong fans.' },
@@ -65,7 +65,7 @@ const serviceData = {
     badge: 'Immediate Results',
     heroH1: 'Maximize ROI with PPC Advertising',
     heroP: 'Drive targeted traffic and generate quality leads instantly with data-driven Pay-Per-Click campaigns designed to convert.',
-    heroImg: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    heroImg: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
     pillarsTitle: 'Precision Targeting, Maximum Returns',
     pillars: [
       { title: 'Strategic Keyword Research', icon: 'fa-magnifying-glass-dollar', desc: 'We identify high-intent keywords that drive conversions, not just clicks, ensuring you reach ready-to-buy customers.' },
@@ -73,7 +73,7 @@ const serviceData = {
       { title: 'Performance Optimization', icon: 'fa-chart-line', desc: 'Continuous monitoring and A/B testing to lower your CPC and increase your conversion rates over time.' }
     ],
     processTitle: 'Our PPC Methodology',
-    processImg: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    processImg: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
     processItems: [
       { title: 'Multi-Platform Campaigns', desc: 'Expertise across Google Ads, Bing, Facebook, LinkedIn, and more to reach your audience where they are.' },
       { title: 'Retargeting Strategies', desc: 'Re-engage visitors who didn\'t convert the first time, keeping your brand top-of-mind.' },
@@ -93,7 +93,7 @@ const serviceData = {
     badge: 'Storytelling That Sells',
     heroH1: 'Engage & Convert with Strategic Content',
     heroP: 'We create compelling content that captures attention, educates your audience, and drives profitable customer action.',
-    heroImg: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    heroImg: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80',
     pillarsTitle: 'Content That Connects',
     pillars: [
       { title: 'Copywriting & Storytelling', icon: 'fa-pen-fancy', desc: 'High-quality articles and website copy that rank on search engines and resonate with your readers.' },
@@ -101,7 +101,7 @@ const serviceData = {
       { title: 'Content & Blogging', icon: 'fa-pen-nib', desc: 'Engaging and SEO-friendly content that boosts visibility, builds credibility, and converts visitors into loyal customers' }
     ],
     processTitle: 'How Content Drives Growth',
-    processImg: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80',
+    processImg: 'https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?auto=format&fit=crop&w=800&q=80',
     processItems: [
       { title: 'Brand Authority', desc: 'Establish your business as an industry thought leader with insightful and expert content.' },
       { title: 'SEO Boost', desc: 'Fresh, relevant content signals to search engines that your site is active and valuable.' },
@@ -121,7 +121,7 @@ const serviceData = {
     badge: 'Direct & Personal',
     heroH1: 'Connect Directly with Email Marketing',
     heroP: 'Nurture leads, retain customers, and drive repeat sales with personalized, automated email campaigns that get opened and clicked.',
-    heroImg: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    heroImg: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=800&q=80',
     pillarsTitle: 'The Power of the Inbox',
     pillars: [
       { title: 'Smart Segmentation', icon: 'fa-users-viewfinder', desc: 'Deliver the right message to the right person. We slice your list based on behavior and demographics for maximum relevance.' },
@@ -129,7 +129,7 @@ const serviceData = {
       { title: 'Deliverability Optimization', icon: 'fa-chart-line', desc: 'Ensure your emails land in the inbox, not spam. We optimize sender reputation, timing, and content for maximum reach.' }
     ],
     processTitle: 'How Email Drives ROI',
-    processImg: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    processImg: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80',
     processItems: [
       { title: 'High ROI', desc: 'For every $1 spent, email marketing generates an average return of $42.' },
       { title: 'Customer Retention', desc: 'Keep your brand top-of-mind and turn one-time buyers into loyal brand advocates.' },
@@ -149,7 +149,7 @@ const serviceData = {
     badge: 'Digital Experiences',
     heroH1: 'Create a Digital Presence That Inspires',
     heroP: 'We design stunning, user-centric websites that tell your brand\'s story and convert visitors into loyal customers.',
-    heroImg: 'https://images.yourstory.com/cs/1/07d110709d5a11e9a87aa50459271f27/HowToGrowYourWebDesignBusiness-1585304714237.jpg?mode=crop&crop=faces&ar=16%3A9&format=auto&w=1920&q=75',
+    heroImg: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
     pillarsTitle: 'Design with Purpose',
     pillars: [
       { title: 'UX/UI Design', icon: 'fa-pen-ruler', desc: 'Intuitive and aesthetically pleasing interfaces that provide a seamless user journey.' },
@@ -157,7 +157,7 @@ const serviceData = {
       { title: 'Performance Optimization', icon: 'fa-rocket', desc: 'Fast-loading, optimized websites built to deliver smooth experiences, reduce bounce rates, and improve overall site performance.' }
     ],
     processTitle: 'How Great Design Drives Growth',
-    processImg: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    processImg: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=800&q=80',
     processItems: [
       { title: 'First Impressions Matter', desc: 'Captivate users instantly with professional design that reflects your brand\'s quality.' },
       { title: 'Brand Consistency', desc: 'Unified visual identity across all digital touchpoints builds recognition and trust.' },
