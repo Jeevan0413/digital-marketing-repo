@@ -207,14 +207,14 @@ const About = () => {
             <p className="section-subtitle reveal fade-up" style={{ transitionDelay: '0.1s' }}>Five pivotal milestones that shaped who we are — and where we are going next.</p>
           </div>
           <div
-            style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: 0, position: 'relative' }}
+            className="about-timeline-container"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
             {/* Base grey track */}
-            <div style={{ position: 'absolute', top: 32, left: '10%', right: '10%', height: 2, background: 'rgba(150,150,180,0.18)', borderRadius: 2, zIndex: 0 }} />
+            <div className="about-timeline-track" />
             {/* Animated progress overlay */}
-            <div style={{ position: 'absolute', top: 32, left: '10%', right: '10%', height: 2, borderRadius: 2, zIndex: 1, overflow: 'hidden', pointerEvents: 'none' }}>
+            <div className="about-timeline-progress">
               {journey.map((item, idx) => {
                 const segW = 100 / journey.length;
                 const isCompleted = idx < activeStage;
@@ -222,29 +222,26 @@ const About = () => {
                 const fillWidth = isCompleted ? segW : isActive ? segW * (progress / 100) : 0;
                 const fromColor = idx > 0 ? journey[idx - 1].color : item.color;
                 return (
-                  <div key={idx} style={{
-                    position: 'absolute',
-                    left: `${idx * segW}%`,
-                    top: 0,
-                    width: `${fillWidth}%`,
-                    height: '100%',
+                  <div key={idx} className="about-timeline-progress-segment" style={{
+                    '--seg-left': `${idx * segW}%`,
+                    '--seg-width': `${fillWidth}%`,
                     background: `linear-gradient(90deg, ${fromColor}, ${item.color})`,
                     borderRadius: 2,
                     boxShadow: isActive ? `0 0 8px ${item.color}99` : 'none',
-                    transition: isCompleted ? 'none' : isPaused ? 'none' : `width ${TICK}ms linear`,
+                    transition: isCompleted ? 'none' : isPaused ? 'none' : `width ${TICK}ms linear, height ${TICK}ms linear`,
                   }} />
                 );
               })}
             </div>
             {journey.map((item, idx) => (
-              <div key={idx} className="reveal fade-up" style={{ transitionDelay: `${idx * 0.1}s`, position: 'relative', zIndex: 2, cursor: 'pointer' }}
+              <div key={idx} className="reveal fade-up about-timeline-step" style={{ transitionDelay: `${idx * 0.1}s` }}
                 onClick={() => { setActiveStage(idx); setProgress(0); }}>
-                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 24 }}>
+                <div className="about-timeline-dot-wrapper">
                   <div style={{ width: 64, height: 64, borderRadius: '50%', background: activeStage === idx ? item.color : '#fff', border: `3px solid ${item.color}`, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: activeStage === idx ? `0 0 0 8px ${item.color}20` : `0 4px 16px ${item.color}25`, transition: 'all 0.35s' }}>
                     <i className={`fa-solid ${item.icon}`} style={{ fontSize: '1.1rem', color: activeStage === idx ? '#fff' : item.color, transition: 'all 0.35s' }}></i>
                   </div>
                 </div>
-                <div style={{ padding: '20px 16px 24px', background: activeStage === idx ? '#fff' : 'transparent', border: `1px solid ${activeStage === idx ? item.color + '40' : 'transparent'}`, borderRadius: 16, boxShadow: activeStage === idx ? `0 16px 40px ${item.color}15` : 'none', transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)', margin: '0 6px' }}>
+                <div className="about-timeline-card-wrapper" style={{ padding: '20px 16px 24px', background: activeStage === idx ? '#fff' : 'transparent', border: `1px solid ${activeStage === idx ? item.color + '40' : 'transparent'}`, borderRadius: 16, boxShadow: activeStage === idx ? `0 16px 40px ${item.color}15` : 'none', transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)' }}>
                   <span style={{ display: 'inline-block', padding: '3px 12px', borderRadius: 50, background: `${item.color}15`, color: item.color, fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.08em', marginBottom: 10 }}>{item.year}</span>
                   <h4 style={{ fontSize: '0.95rem', fontWeight: 800, fontFamily: 'var(--font-heading)', marginBottom: 8, color: 'var(--text-main)' }}>{item.title}</h4>
                   <div style={{ maxHeight: activeStage === idx ? 300 : 0, overflow: 'hidden', opacity: activeStage === idx ? 1 : 0, transform: activeStage === idx ? 'translateY(0)' : 'translateY(-10px)', transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)' }}>

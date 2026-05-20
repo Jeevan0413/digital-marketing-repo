@@ -933,3 +933,115 @@
         display: none;
     }
 }
+
+/* ============================================
+   RESPONSIVE JOURNEY TIMELINE
+   ============================================ */
+.about-timeline-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    position: relative;
+}
+
+.about-timeline-track {
+    position: absolute;
+    top: 32px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: rgba(150, 150, 180, 0.18);
+    border-radius: 2px;
+    z-index: 0;
+}
+
+.about-timeline-progress {
+    position: absolute;
+    top: 32px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    border-radius: 2px;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.about-timeline-progress-segment {
+    position: absolute;
+    left: var(--seg-left);
+    width: var(--seg-width);
+    top: 0;
+    height: 100%;
+}
+
+.about-timeline-step {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.about-timeline-dot-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.about-timeline-card-wrapper {
+    margin: 0 6px;
+}
+
+@media (max-width: 768px) {
+    .about-timeline-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding-left: 48px;
+    }
+
+    .about-timeline-track {
+        top: 32px;
+        bottom: 32px;
+        left: 20px;
+        right: auto;
+        width: 2px;
+        height: auto;
+    }
+
+    .about-timeline-progress {
+        top: 32px;
+        bottom: 32px;
+        left: 20px;
+        right: auto;
+        width: 2px;
+        height: auto;
+    }
+
+    .about-timeline-progress-segment {
+        left: 0;
+        width: 100%;
+        top: var(--seg-left);
+        height: var(--seg-width);
+    }
+
+    .about-timeline-step {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .about-timeline-dot-wrapper {
+        position: absolute;
+        left: -48px;
+        top: 0;
+        margin-bottom: 0;
+        justify-content: flex-start;
+        width: 64px;
+        height: 64px;
+    }
+
+    .about-timeline-card-wrapper {
+        margin: 0;
+        width: 100%;
+    }
+}

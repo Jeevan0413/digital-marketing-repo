@@ -245,8 +245,8 @@ const Services = () => {
             <div className="carousel-viewport" style={{ overflow: 'visible', width: '100%', position: 'relative', height: '500px', display: 'flex', alignItems: 'center' }}>
               <div className="portfolio-grid" style={{
                 position: 'absolute', left: '50%',
-                transform: `translateX(calc(-175px - ${activeIndex * 390}px))`,
-                transition: (activeIndex === caseStudies.length || activeIndex === caseStudies.length * 2 - 1) ? 'none' : 'transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)',
+                '--active-index': activeIndex,
+                transition: (activeIndex === caseStudies.length || activeIndex === caseStudies.length * 2 - 1) ? 'none' : undefined,
                 display: 'flex', width: 'max-content'
               }}>
                 {displayStudies.map((study, idx) => (

@@ -56,7 +56,7 @@ const Blog = () => {
       <section style={{ padding: '0 20px 60px', background: '#fff' }}>
         <div className="container">
           <div className="blog-featured-card">
-            <div style={{ position: 'relative', overflow: 'hidden' }}>
+            <div style={{ position: 'relative', overflow: 'hidden', minHeight: '300px' }}>
               <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Featured" style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.5s' }}
                 onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.04)'}
                 onMouseLeave={e => e.currentTarget.style.transform = 'none'} />
@@ -64,7 +64,7 @@ const Blog = () => {
                 <span style={{ padding: '6px 16px', borderRadius: '20px', background: 'linear-gradient(135deg, #6366F1, #A855F7)', color: '#fff', fontSize: '0.8rem', fontWeight: 700 }}>✦ Featured</span>
               </div>
             </div>
-            <div style={{ padding: '52px 52px', background: '#fff', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            <div style={{ padding: 'clamp(24px, 5vw, 52px)', background: '#fff', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <div style={{ display: 'flex', gap: '12px', marginBottom: '20px', flexWrap: 'wrap' }}>
                 <span style={{ padding: '4px 12px', borderRadius: '12px', background: 'rgba(2,136,209,0.08)', color: 'var(--primary-color)', fontSize: '0.8rem', fontWeight: 700 }}>AI & Marketing</span>
                 <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>May 12, 2026 · 10 min read</span>

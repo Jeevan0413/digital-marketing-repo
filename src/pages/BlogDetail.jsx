@@ -24,11 +24,8 @@ const Callout = ({ icon, title, children, color = '#0288D1' }) => (
 );
 
 const StatRow = ({ stats }) => (
-  <div style={{
-    display: 'grid',
-    gridTemplateColumns: `repeat(${stats.length}, 1fr)`,
-    gap: '16px',
-    margin: '32px 0',
+  <div className="blog-stat-grid" style={{
+    '--cols': stats.length,
   }}>
     {stats.map((s, i) => (
       <div key={i} style={{
@@ -111,7 +108,7 @@ const Quote = ({ text, author }) => (
 );
 
 const TwoCol = ({ left, right }) => (
-  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', margin: '28px 0' }}>
+  <div className="blog-two-col">
     <div style={{ padding: '22px', borderRadius: '16px', background: 'rgba(16,185,129,0.05)', border: '1px solid rgba(16,185,129,0.15)' }}>
       <strong style={{ display: 'block', marginBottom: '12px', color: '#10B981', fontSize: '0.82rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{left.title}</strong>
       <CheckList items={left.items} color="#10B981" />
@@ -546,10 +543,34 @@ const BlogDetail = () => {
                 .post-content-wrap p { margin-bottom: 18px; }
                 .post-content-wrap strong { color: var(--text-main); }
                 .post-content-wrap em { color: var(--primary-color); font-style: italic; }
-                @media (max-width: 600px) {
-                  .post-content-wrap > div > div[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
-                  .post-content-wrap > div > div[style*="repeat(4"] { grid-template-columns: repeat(2, 1fr) !important; }
-                  .post-content-wrap > div > div[style*="repeat(3"] { grid-template-columns: repeat(2, 1fr) !important; }
+
+                .blog-stat-grid {
+                  display: grid;
+                  grid-template-columns: repeat(var(--cols, 4), 1fr);
+                  gap: 16px;
+                  margin: 32px 0;
+                }
+
+                .blog-two-col {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 20px;
+                  margin: 28px 0;
+                }
+
+                @media (max-width: 768px) {
+                  .blog-stat-grid {
+                    grid-template-columns: repeat(2, 1fr) !important;
+                  }
+                  .blog-two-col {
+                    grid-template-columns: 1fr !important;
+                  }
+                }
+
+                @media (max-width: 480px) {
+                  .blog-stat-grid {
+                    grid-template-columns: 1fr !important;
+                  }
                 }
               `}</style>
               <div className="post-content-wrap">{data.content}</div>
